@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev" : "nodemon --exec babel-node src/server.js -e js,gql"
+    "dev" : "nodemon --exec babel-node src/app.js -e js,gql"
   },
   "dependencies": {
     "apollo-server": "^2.15.1",
