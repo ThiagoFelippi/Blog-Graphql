@@ -1,10 +1,9 @@
-
-
-
-type Query{
-  posts: String!
+type Post{
+  title: String
+  content: String
 }
 
-# type Mutation{
-
-# }
+type Query{
+  posts: [Post!]!
+  post(title: String!): Post
+}

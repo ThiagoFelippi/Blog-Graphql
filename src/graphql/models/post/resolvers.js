@@ -1,5 +1,8 @@
+import Post from '../../../models/Post'
+
 export default {
   Query:{
-    posts: () => "Hello world"
+    posts: () => Post.find(),
+    post: (_, {id}) => Post.findById(id)
   }
 }

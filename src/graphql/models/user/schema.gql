@@ -1,5 +1,10 @@
-
+type User{
+  name: String
+  email: String
+  password: String
+}
 
 type Query{
-  users: String!
+  users: [User!]!
+  user(email: String!): User
 }
