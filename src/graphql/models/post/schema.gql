@@ -1,19 +1,23 @@
 type Post{
-  title: String
-  content: String
+  id: ID!
+  title: String!
+  content: String!
+  tag: String!
 }
 
 input PostInput{
-  title: String!, 
+  title: String!
   content: String!
+  tag: String!
 }
 
 type Query{
   posts: [Post!]!
-  post(title: String!): Post
+  postByTag(tag: String!): [Post!]!
+  post(id: ID!): Post
 }
 
 type Mutation{
   createPost(data: PostInput) : Post!
-  updatePost(data: PostInput) : Post!
+  updatePost(id: ID!, data: PostInput) : Post!
 }

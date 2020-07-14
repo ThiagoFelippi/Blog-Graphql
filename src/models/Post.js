@@ -8,6 +8,10 @@ const Schema = new mongoose.Schema({
   content: {
     type: String,
     required: true
+  },
+  tag:{
+    type: String,
+    required: true
   }
 })
 

@@ -3,6 +3,7 @@ import Post from '../../../models/Post'
 export default {
   Query:{
     posts: () => Post.find(),
+    postByTag: (_, {tag}) => Post.find().where({tag}),
     post: (_, {id}) => Post.findById(id)
   },
 
