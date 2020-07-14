@@ -1,0 +1,10 @@
+
+
+
+type Query{
+  posts: String!
+}
+
+# type Mutation{
+
+# }
