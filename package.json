@@ -7,7 +7,7 @@
     "dev" : "nodemon --exec babel-node src/app.js -e js,gql"
   },
   "dependencies": {
-    "apollo-server": "^2.15.1",
+    "apollo-server": "^2.25.3",
     "graphql": "^15.3.0",
     "merge-graphql-schemas": "^1.7.8",
     "mongoose": "^5.9.24"
